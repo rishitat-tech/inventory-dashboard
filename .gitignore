@@ -1,0 +1,6 @@
+data/inventory_original_snapshot.xlsx
+seed_dashboard_data.py
+update_full_usa_inventory.py
+__pycache__/
+.DS_Store
+.venv/
