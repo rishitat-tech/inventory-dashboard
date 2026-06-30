@@ -11,3 +11,9 @@ data/*.csv
 __pycache__/
 .venv/
 .DS_Store
+add_in_ph_hardware_to_inventory.py
+add_usa_to_order.py
+import_excel_to_supabase.py
+reset_clean_inventory.py
+update_inventory_categories.py
+update_inventory_item_groups.py
