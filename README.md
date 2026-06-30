@@ -143,9 +143,98 @@ Supabase is the source of truth for live data.
 
 ## Local Development
 
+### If setting up for the first time
+
 Clone the repo:
 
-```bash
+\`\`\`bash
 git clone https://github.com/rishitat-tech/inventory-dashboard.git
 cd inventory-dashboard
+\`\`\`
 
+Create a virtual environment:
+
+\`\`\`bash
+python3 -m venv .venv
+source .venv/bin/activate
+\`\`\`
+
+Install dependencies:
+
+\`\`\`bash
+pip install -r requirements.txt
+\`\`\`
+
+Create a local `.env` file:
+
+\`\`\`bash
+SUPABASE_URL=your_supabase_project_url
+SUPABASE_SERVICE_KEY=your_supabase_secret_key
+\`\`\`
+
+Run locally:
+
+\`\`\`bash
+streamlit run app.py
+\`\`\`
+
+Open:
+
+\`\`\`text
+http://localhost:8501
+\`\`\`
+
+### If the repo is already on your machine
+
+Go to the project:
+
+\`\`\`bash
+cd /Users/rishitathota/inventory-dashboard
+\`\`\`
+
+Activate the environment:
+
+\`\`\`bash
+source .venv/bin/activate
+\`\`\`
+
+Run the app:
+
+\`\`\`bash
+streamlit run app.py
+\`\`\`
+
+Open:
+
+\`\`\`text
+http://localhost:8501
+\`\`\`
+
+## Libraries Used
+
+- Streamlit
+- Pandas
+- Plotly
+- Supabase Python Client
+- python-dotenv
+
+## Deployment
+
+The app is deployed on Streamlit Cloud.
+
+Required Streamlit secrets:
+
+\`\`\`toml
+SUPABASE_URL = "your_supabase_project_url"
+SUPABASE_SERVICE_KEY = "your_supabase_secret_key"
+\`\`\`
+
+Do not commit secrets to GitHub.
+
+## Notes
+
+- Click `Save Changes` after editing.
+- Click `Reload from Supabase` to refresh data.
+- Anyone with access to the app link may be able to edit data.
+- Use `Field Requests` for new columns or sections.
+- If multiple people edit the same table at the same time, the later save may overwrite earlier edits.
