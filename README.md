@@ -189,7 +189,7 @@ http://localhost:8501
 Go to the project:
 
 \`\`\`bash
-cd /Users/rishitathota/inventory-dashboard
+cd inventory-dashboard
 \`\`\`
 
 Activate the environment:
